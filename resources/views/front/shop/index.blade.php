@@ -234,27 +234,27 @@
 					
 					<div class="store-filter clearfix">
 						<ul class="store-pagination">
-							{{-- Nút trang trước --}}
+							<!--Nút Trang Trước-->
 							@if ($products->onFirstPage())
 								<li class="disabled"><span>&laquo;</span></li>
 							@else
 								<li><a href="{{ $products->previousPageUrl() }}">&laquo;</a></li>
 							@endif
-					
-							{{-- Các trang --}}
+							
+							<!--Nút Các trang-->
 							@for ($i = 1; $i <= $products->lastPage(); $i++)
 								<li class="{{ $products->currentPage() == $i ? 'active' : '' }}">
 									<a href="{{ $products->url($i) }}">{{ $i }}</a>
 								</li>
 							@endfor
 					
-							{{-- Nút trang tiếp theo --}}
+							<!--Nút trang tiếp theo-->
 							@if ($products->hasMorePages())
 								<li><a href="{{ $products->nextPageUrl() }}">&raquo;</a></li>
 							@else
 								<li class="disabled"><span>&raquo;</span></li>
 							@endif
-						</ul>
+						</ul>						
 					</div>
 					<!-- /store bottom filter -->
 				</div>

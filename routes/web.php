@@ -14,21 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Front (Client)
 Route::get('/', [App\Http\Controllers\Front\HomeController::class, 'index']);
-
-// Route::prefix('shop')->group(function(){
-    
-// });
-
-// Route::get('shop/product/{id}', [App\Http\Controllers\Front\ShopController::class, 'show']);
-// Route::get('shop', [App\Http\Controllers\Front\ShopController::class, 'index']);
-// Route::get('shop/apple', [App\Http\Controllers\Front\ShopController::class, 'productIOS']);
-// Route::get('shop/android', [App\Http\Controllers\Front\ShopController::class, 'productAndroid']);
 
 Route::prefix('shop')->group(function(){
     Route::get('product/{id}', [App\Http\Controllers\Front\ShopController::class, 'show']);
     Route::get('/', [App\Http\Controllers\Front\ShopController::class, 'index']);
-    
 });
 
 Route::prefix('account')->group(function () {
@@ -36,4 +27,20 @@ Route::prefix('account')->group(function () {
     Route::post('login', [App\Http\Controllers\Front\AccountController::class, 'checkLogin']);
     Route::get('logout', [App\Http\Controllers\Front\AccountController::class, 'logout']);
     Route::get('register', [App\Http\Controllers\Front\AccountController::class, 'register']);
+    Route::post('register', [App\Http\Controllers\Front\AccountController::class, 'postRegister']);
+});
+
+// Dasboard (Admin)
+Route::prefix('admin')->middleware('CheckAdminLogin')->group(function(){
+    
+    Route::resource('user',App\Http\Controllers\Admin\UserController::class,[]);
+    Route::resource('product',App\Http\Controllers\Admin\ProductController::class,[]);
+
+
+    Route::prefix('login')->group(function () {
+        Route::get( '', [App\Http\Controllers\Admin\HomeController::class, 'getLogin'])->withoutMiddleware('CheckAdminLogin');
+        Route::post( '', [App\Http\Controllers\Admin\HomeController::class, 'postLogin'])->withoutMiddleware('CheckAdminLogin');
+    });
+
+    Route::get( 'logout', [App\Http\Controllers\Admin\HomeController::class, 'logout']);
 });

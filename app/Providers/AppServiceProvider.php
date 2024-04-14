@@ -4,8 +4,12 @@ namespace App\Providers;
 
 use App\Repositories\Product\ProductRepository;
 use App\Repositories\Product\ProductRepositoryInterface;
+use App\Repositories\User\UserRepository;
+use App\Repositories\User\UserRepositoryInterface;
 use App\Service\Product\ProductService;
 use App\Service\Product\ProductServiceInterface;
+use App\Service\User\UserService;
+use App\Service\User\UserServiceInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -27,6 +31,23 @@ class AppServiceProvider extends ServiceProvider
             ProductServiceInterface::class,
             ProductService::class
         );
+
+        //User
+        $this->app->singleton(
+
+            UserRepositoryInterface::class,
+            UserRepository::class
+
+        );
+
+        $this->app->singleton(
+
+            UserServiceInterface::class,
+            UserService::class
+
+        );
+
+
     }
 
     /**

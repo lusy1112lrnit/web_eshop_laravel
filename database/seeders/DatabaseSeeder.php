@@ -112,28 +112,28 @@ class DatabaseSeeder extends Seeder
 
         DB::table('brands')->insert([
             [
-                'name' => 'Calvin Klein',
+                'name' => 'Apple',
             ],
             [
-                'name' => 'Diesel',
+                'name' => 'Samsung',
             ],
             [
-                'name' => 'Polo',
+                'name' => 'Xiaomi',
             ],
             [
-                'name' => 'Tommy Hilfiger',
+                'name' => 'Sony',
             ],
         ]);
 
         DB::table('product_categories')->insert([
             [
-                'name' => 'Men',
+                'name' => 'ios',
             ],
             [
-                'name' => 'Women',
+                'name' => 'android',
             ],
             [
-                'name' => 'Kids',
+                'name' => 'windows phone',
             ],
         ]);
 
@@ -141,8 +141,8 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 1,
                 'brand_id' => 1,
-                'product_category_id' => 2,
-                'name' => 'Pure Pineapple',
+                'product_category_id' => 1,
+                'name' => 'Iphone 15',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur ing elit, sed do eiusmod tempor sum dolor sit amet, consectetur adipisicing elit, sed do mod tempor',
                 'content' => '',
                 'price' => 629.99,

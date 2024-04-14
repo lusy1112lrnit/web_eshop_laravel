@@ -43,5 +43,7 @@ abstract class BaseRepositories implements RepositoriesInterface
 
         return $object -> delete();
     }
+
+    
     
 }

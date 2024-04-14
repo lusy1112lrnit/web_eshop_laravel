@@ -26,24 +26,23 @@
                                 <input class="input" type="email" name="email" id="email" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input class="input" type="password" name="password"  id="pass" placeholder="Password">
+                                <input class="input" type="password" name="password" id="pass" placeholder="Password">
                             </div>
                             <br>
-                            <div class="group-input gi-check">
+                            {{-- <div class="group-input gi-check">
                                 <div class="gi-more">
                                   <label for="save-pass">Save password</label>
                                   <input type="checkbox" id="save-pass" name="remember">
                                 </div>
-                              </div>
-                            <div class="items-center">
-                                <button type="submit" class=" btn btn-block btn-lg btn-danger">Login</button>
-                            </div>
-                            <br>
-
+                            </div> --}}
                             <div class="text-center">
-                                <a href="#">Forgot Password?</a>
+                                <button type="submit" class=" btn btn-block btn-lg btn-primary"> Login</button>
+                            </div>
+                            <hr>
+                            <div class="items-center">
+                                <a href=""> Google Login</a>
                                 <span class="text-muted"> | </span>
-                                <a href="#">Create an Account</a>
+                                <a href="./account/register"> Create an Account</a>
                             </div>
                         </form>
                     </div>

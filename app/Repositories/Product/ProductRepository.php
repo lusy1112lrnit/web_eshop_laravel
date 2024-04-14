@@ -34,6 +34,21 @@ class ProductRepository extends BaseRepositories implements ProductRepositoryInt
         $products = $this->model->paginate(6);
 
         return $products;
-    } 
+    }
+
+    public function searchAndPaginate($searchQuery, $perPage = 5)
+    {
+        return Product::where('name', 'like', '%' . $searchQuery . '%')->paginate($perPage);
+    }
+
+    public function searchAndPaginateAll($searchQuery, $perPage = 6)
+    {
+        return Product::where('name', 'like', '%' . $searchQuery . '%')
+                    ->orWhere('price', 'like', '%' . $searchQuery . '%')
+                    ->orWhereHas('brand', function ($query) use ($searchQuery) {
+                        $query->where('name', 'like', '%' . $searchQuery . '%');
+                    })
+                    ->paginate($perPage);
+    }
 
 }

@@ -48,4 +48,12 @@ class ProductService extends BaseService implements ProductServiceInterface
         return $this->repository->getProductOnIndex();
     }
 
+    public function searchAndPaginate($searchQuery, $perPage = 5)
+    {
+        return $this->repository->searchAndPaginate($searchQuery, $perPage);
+    }
+    public function searchAndPaginateAll($searchQuery, $perPage = 6)
+    {
+        return $this->repository->searchAndPaginateAll($searchQuery, $perPage);
+    }
 }
