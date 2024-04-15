@@ -39,13 +39,18 @@
                                 <button type="submit" class=" btn btn-block btn-lg btn-primary"> Login</button>
                             </div>
                             <hr>
+                            <div class="text-center">
+                                <button type="button" class=" btn btn-block btn-lg ">
+                                    <a href="{{ route('google.login')}}"> Google Login</a>
+                                </button>
+                            </div>
+                            <hr>
                             <div class="relative text-center ">
                                 <p>
-                                    <a href="{{ route('google.login')}}"> Google Login</a>
-                                    <span class="text-muted"> | </span>
                                     <a href="./account/register"> Create an Account</a>
                                 </p>
                                 {{-- <p>
+                                    <span class="text-muted"> | </span>
                                     <a href=""> Facebook Login</a>
                                 </p> --}}
                             </div>

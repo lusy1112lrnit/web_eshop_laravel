@@ -84,9 +84,9 @@
                         <div class="header-search">
                             <form>
                                 <select class="input-select">
-                                    <option value="0">All Categories</option>
-                                    <option value="1">Category 01</option>
-                                    <option value="1">Category 02</option>
+                                    <option value="">All Categories</option>
+                                    <option value="1">IOS</option>
+                                    <option value="2">Android</option>
                                 </select>
                                 <input class="input" type="search" name="search" id="search" value="{{ request('search')}}" placeholder="Search here">
                                 <button type="submit" class="search-btn">Search</button>
@@ -103,7 +103,7 @@
                             <div class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                     <i class="fa fa-shopping-cart"></i>
-                                    <span>Your Cart</span>
+                                    <span>Giỏ hàng</span>
                                     <div class="qty">3</div>
                                 </a>
                                 <div class="cart-dropdown">

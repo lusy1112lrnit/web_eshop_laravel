@@ -24,7 +24,7 @@
             <div class="h-100 bg-plum-plate bg-animation">
                 <div class="d-flex h-100 justify-content-center align-items-center">
                     <div class="mx-auto app-login-box col-md-8">
-                        <div class="app-logo-inverse mx-auto mb-3"></div>
+                        <div class=" mx-auto mb-3"></div>
                         <div class="modal-dialog w-100 mx-auto">
                             <div class="modal-content">
 
@@ -33,7 +33,7 @@
                                     <div class="modal-body">
                                         <div class="h5 modal-title text-center">
                                             <h4 class="mt-2">
-                                                <div>Welcome back,</div>
+                                                <div>Welcome back Admin,</div>
                                                 <span>Please sign in to your account below.</span>
                                             </h4>
                                         </div>
@@ -71,7 +71,7 @@
 
                             </div>
                         </div>
-                        <div class="text-center text-white opacity-8 mt-3">Copyright © CodeLean 2022</div>
+                        <div class="text-center text-white opacity-8 mt-3">Copyright © Code 2022</div>
                     </div>
                 </div>
             </div>

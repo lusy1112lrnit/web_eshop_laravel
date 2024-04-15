@@ -59,7 +59,7 @@
                 </span>
             </div>
             <div class="app-header__content">
-                <div class="app-header-left">
+                {{-- <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
                             <input type="text" class="search-input" placeholder="Type to search">
@@ -239,9 +239,9 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
                 <div class="app-header-right">
-                    <div class="header-dots">
+                    {{-- <div class="header-dots">
                         <div class="dropdown">
                             <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
                                 class="p-0 mr-2 btn btn-link">
@@ -850,7 +850,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="header-btn-lg pr-0">
                         <div class="widget-content p-0">
@@ -893,7 +893,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="scroll-area-xs" style="height: 150px;">
+                                            {{-- <div class="scroll-area-xs" style="height: 150px;">
                                                 <div class="scrollbar-container ps">
                                                     <ul class="nav flex-column">
                                                         <li class="nav-item-header nav-item">Activity</li>
@@ -954,7 +954,7 @@
                                                     <button class="btn-wide btn btn-primary btn-sm"> Open Messages
                                                     </button>
                                                 </li>
-                                            </ul>
+                                            </ul> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -1466,15 +1466,15 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="./admin/order">
-                                            <i class="metismenu-icon"></i>Order
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="./admin/product">
                                             <i class="metismenu-icon"></i>Product
                                         </a>
                                     </li>
+                                    {{-- <li>
+                                        <a href="./admin/order">
+                                            <i class="metismenu-icon"></i>Order
+                                        </a>
+                                    </li> --}}
                                     {{-- <li>
                                         <a href="./admin/category">
                                             <i class="metismenu-icon"></i>Category
@@ -2232,7 +2232,7 @@
         </div>
 
     </div>
-    <div class="app-drawer-wrapper">
+    {{-- <div class="app-drawer-wrapper">
         <div class="drawer-nav-btn">
             <button type="button" class="hamburger hamburger--elastic is-active">
                 <span class="hamburger-box"><span class="hamburger-inner"></span></span>
@@ -2664,7 +2664,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     
 
