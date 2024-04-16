@@ -55,14 +55,14 @@
 						</div>
 						<p>{{$product -> name}} đem lại một diện mạo hoàn toàn mới và sở hữu nhiều tính năng ưu việt cùng công nghệ tiên tiến. Hãy khám phá các đánh giá chi tiết về sản phẩm về khía cạnh thiết kế, màn hình, hiệu năng, thời lượng pin và bộ camera độc đáo qua các thông tin dưới đây!</p>
 
-						<div class="product-options">
+						{{-- <div class="product-options">
 							<label>
 								Color
 								<select class="input-select">
 									<option value="0">Red</option>
 								</select>
 							</label>
-						</div>
+						</div> --}}
 
 						<div class="add-to-cart">
 							<div class="qty-label">
@@ -76,16 +76,16 @@
 							<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
 						</div>
 
-						<ul class="product-btns">
+						{{-- <ul class="product-btns">
 							<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
 							<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
-						</ul>
+						</ul> --}}
 
-						<ul class="product-links">
+						{{-- <ul class="product-links">
 							<li>Category:</li>
 							<li><a href="#"> </a></li>
 							<li><a href="#">Accessories</a></li>
-						</ul>
+						</ul> --}}
 
 						<ul class="product-links">
 							<li>Share:</li>
